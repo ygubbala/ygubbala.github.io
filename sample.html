@@ -1,5 +1,5 @@
 <html>
-<title>Interactive Web Page</title>
+<title>Student Observations</title>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -7,7 +7,8 @@
 <style>
 body {background-color: powderblue;}
 h1{
-color: Red;
+color: Blue;
+align: center;
 }
 a{
 cursor:pointer;
@@ -17,7 +18,7 @@ div.demo {
     width: 100%;
     table-layout: fixed;
 }
-p{
+p.no-show{
 display:none;}
 div.demo span {
     display: table-cell;
@@ -27,24 +28,243 @@ div.demo span {
 </style>
 
 <div id = "container">
-<h1>Blue</h1>
+<h1>Student Information</h1>
 </div>
 
 <div class="demo">
     <span>
-		<a><img src="pokeman.jpg" alt="Picasso" style="width:100px;height:100px;" class="showContent" id="Robbie"></a>
-		<p id="RobbieTxt">This is about Robbie</p>
-		<!--<a><embed src="Adam_4th.pdf" width="800px" height="2100px" />doc</a>
-		<iframe src="Adam_4th.docx" style="width: 100%;height: 100%;border: none;"></iframe>!-->
-		<a href= "Adam_4th.pdf" target="_blank" title="Adam_4th">Adam_4th</a>
+		<a><img src="Images/Adam_4th.jpg" alt="Adam_4th" style="width:100px;height:100px;" class="showContent" id="Adam"></a>
+		<p id="AdamTxt" class="no-show">
+		Constantly moving<br/>
+		Disturbed students around him<br/>
+		Raises his hand to answer teacher’s questions, but couldn’t answer it<br/>
+		Has difficulty staying on task<br/>
+		Enjoys peers’ attention<br/>
+		Problems are behavioral, not academic<br/>
+		Self-conscious about reading ability<br/>
+		Reading below grade level<br/>
+		Has difficulties with retelling passages he reads<br/>
+		Has high listening comprehension
+		</p>
+		<p><a href= "PDF/Adam_4th.pdf" target="_blank" title="Adam_4th">Adam_4th</a></p>
 	</span>
     <span>
-		<a><img src="pokeman.jpg" alt="Picasso" style="width:100px;height:100px;" class="showContent" id="Sam"></a>
-		<p id="SamTxt">This is about Sam</p>
+		<a><img src="Images/Amanda_Kindergarten.jpg" alt="Amanda_Kindergarten" style="width:100px;height:100px;" class="showContent" id="Amanda"></a>
+		<p id="AmandaTxt" class="no-show">
+		Does not participate in whole-class activities<br/>
+		Distracted during learning and activity time<br/>
+		Raises hand to answer teacher questions, but is discouraged when she isn’t chosen to answer aloud<br/>
+		More engaged in class after lunch<br/>
+		Gets bored with “Ticket to Read” computer activity<br/>
+		Has trouble listening to and following directions<br/>
+		Says she likes to read<br/>
+		Has some of the skills necessary for early literacy development<br/>
+		Low phonological awareness<br/>
+		Low letter-sound correspondence awareness<br/>
+		Was not in school until Kindergarten
+		</p>
+		<p><a href= "PDF/Amanda_Kindergarten.pdf" target="_blank" title="Amanda_Kindergarten">Amanda_Kindergarten</a></p>
 	</span>
     <span>
-		<a><img src="pokeman.jpg" alt="Picasso" style="width:100px;height:100px;" class="showContent" id="Joey"></a>
-		<p id="JoeyTxt">This is about Joey</p>
+		<a><img src="Images/Apple_3rd.jpg" alt="Apple_3rd" style="width:100px;height:100px;" class="showContent" id="Apple"></a>
+		<p id="AppleTxt" class="no-show">
+		Speaks very quietly<br/>
+		Does not raise hand to share out very often<br/>
+		New to the school<br/>
+		Has difficulty paying attention in class<br/>
+		Goes to a reading mentor each day to help improve her reading skills and bring her up to on-level<br/>
+		Listening comprehension skills are greater than reading comprehension skills
+		</p>
+		<p><a href= "PDF/Apple_3rd.pdf" target="_blank" title="Apple_3rd">Apple_3rd</a></p>
+	</span>
+	<span>
+		<a><img src="Images/Billy_1st.jpg" alt="Billy_1st" style="width:100px;height:100px;" class="showContent" id="Billy"></a>
+		<p id="BillyTxt" class="no-show">
+		Constantly moving<br/>
+		Does not speak out or engage in discussion until a picture is shown – then he’s very engaged<br/>
+		Squints left eye as he reads<br/>
+		Has trouble paying attention<br/>
+		Is fond of reading, but would prefer to play outside<br/>
+		Wants to work hard and improve reading skills<br/>
+		Loves one-on-one interactions with teacher candidate
+		</p>
+		<p><a href= "PDF/Billy_1st.pdf" target="_blank" title="Billy_1st">Billy_1st</a></p>
+	</span>
+</div>
+<br />
+<div class="demo">
+    <span>
+		<a><img src="Images/Estrella_1st.jpg" alt="Estrella_1st" style="width:100px;height:100px;" class="showContent" id="Estrella"></a>
+		<p id="EstrellaTxt" class="no-show">
+		Gets distracted easily<br/>
+		Seems to be shy<br/>
+		Uses decoding strategies to sound out unfamiliar words<br/>
+		Engages more with pictures than text<br/>
+		Intimidated to read in front of peers<br/>
+		Knows all her consonant digraphs<br/>
+		Gains more confidence in reading as she practices
+		</p>
+		<p><a href= "PDF/Estrella_1st.pdf" target="_blank" title="Estrella_1st">Estrella_1st</a></p>
+	</span>
+    <span>
+		<a><img src="Images/Finn_2nd.jpg" alt="Finn_2nd" style="width:100px;height:100px;" class="showContent" id="Finn"></a>
+		<p id="FinnTxt" class="no-show">
+		Goes to pull-out ESOL classroom with three other students<br/>
+		Easily distracted<br/>
+		Does not distract others in the class since he’s fairly quiet<br/>
+		Sometimes tries to “sneak” and have bad behavior<br/>
+		Is not consistently fluent when he reads<br/>
+		Likes reading books for fun<br/>
+		Uses pictures to understand stories<br/>
+		Has trouble with reading comprehension<br/>
+		Sight word knowledge is on point with grade level expectations
+		</p>
+		<p><a href= "PDF/Finn_2nd.pdf" target="_blank" title="Finn_2nd">Finn_2nd</a></p>
+	</span>
+    <span>
+		<a><img src="Images/Joe_3rd.jpg" alt="Joe_3rd" style="width:100px;height:100px;" class="showContent" id="Joe"></a>
+		<p id="JoeTxt" class="no-show">
+		Fidgety and talkative during class time<br/>
+		Very social<br/>
+		Has trouble staying focused<br/>
+		Pouts easily<br/>
+		Rarely finishes his work<br/>
+		Lives with grandmother and several cousins<br/>
+		Homework takes a long time for him to complete<br/>
+		Capable of concentrating and reading in school, but this has not been expected of him – so he doesn’t<br/>
+		Wants to read self-selected texts<br/>
+		Not motivated to read – especially at home<br/>
+		Teacher believes he could be on a 4th grade reading level, but he doesn’t want to work hard at reading
+		</p>
+		<p><a href= "PDF/Joe_3rd.pdf" target="_blank" title="Joe_3rd">Joe_3rd</a></p>
+	</span>
+	<span>
+		<a><img src="Images/Joseph_Kindergarten.jpg" alt="Joseph_Kindergarten" style="width:100px;height:100px;" class="showContent" id="Joseph"></a>
+		<p id="JosephTxt" class="no-show">
+		Gets distracted easily<br/>
+		Has low background knowledge to support reading<br/>
+		Raises hand to answer questions<br/>
+		Reluctant to participate in classroom learning<br/>
+		Needs constant hands-on learning opportunities<br/>
+		Believes writing is his favorite subject in school, even though he is not very productive during writing time<br/>
+		Is in the emergent reader stage
+		</p>
+		<p><a href= "PDF/Joseph_Kindergarten.pdf" target="_blank" title="Joseph_Kindergarten">Joseph_Kindergarten</a></p>
+	</span>
+</div>
+<br/>
+<div class="demo">
+    <span>
+		<a><img src="Images/Julia_4th.jpg" alt="Julia_4th" style="width:100px;height:100px;" class="showContent" id="Julia"></a>
+		<p id="JuliaTxt" class="no-show">
+		Frequently raises hand to volunteer<br/>
+		Struggles to read long numbers<br/>
+		Gets distracted and disturbs others around her during classroom lessons<br/>
+		Parent meeting resulted in better behavior<br/>
+		Distracted during independent reading time<br/>
+		Enjoys working with teacher candidate<br/>
+		Self-corrects as she reads<br/>
+		Needs to work on fluency and expression as she reads<br/>
+		Needs sight word practice
+		</p>
+		<p><a href= "PDF/Julia_4th.pdf" target="_blank" title="Julia_4th">Julia_4th</a></p>
+	</span>
+    <span>
+		<a><img src="Images/Julio_3rd.jpg" alt="Julio_3rd" style="width:100px;height:100px;" class="showContent" id="Julio"></a>
+		<p id="JulioTxt" class="no-show">
+		Uses finger to guide him during reading<br/>
+		Does not ask for help<br/>
+		Struggles to decode consonant digraphs<br/>
+		Struggles with blending sounds together – especially in the middle of a word<br/>
+		Handwriting is sloppy<br/>
+		Misspells many words when he writes, even if he is copying the words<br/>
+		Skips sight words when reading<br/>
+		Is reading below level and receives extra instruction from the reading coach<br/>
+		Loves to learn new facts<br/>
+		Does not like to read aloud<br/>
+		Claims to get headaches if he reads too close to the text<br/>
+		Has good comprehension skills
+		</p>
+		<p><a href= "PDF/Julio_3rd.pdf" target="_blank" title="Julio_3rd">Julio_3rd</a></p>
+	</span>
+    <span>
+		<a><img src="Images/Katie_1st.jpg" alt="Katie_1st" style="width:100px;height:100px;" class="showContent" id="Katie"></a>
+		<p id="KatieTxt" class="no-show">
+		Raises her hand to answer questions in class<br/>
+		Does not speak out of turn<br/>
+		Listens attentively in class<br/>
+		Attentive to classroom rules and admonishes ones who break them<br/>
+		Avoids text, but “reads” pictures during independent reading time<br/>
+		Eager to learn<br/>
+		Below grade level in reading and writing<br/>
+		Needs to read ‘good fit’ books<br/>
+		Has extreme mood swings<br/>
+		Prefers self-selected to teacher-selected books for independent reading<br/>
+		</p>
+		<p><a href= "PDF/Katie_1st.pdf" target="_blank" title="Katie_1st">Katie_1st</a></p>
+	</span>
+	<span>
+		<a><img src="Images/Liam_Kindergarten.jpg" alt="Liam_Kindergarten" style="width:100px;height:100px;" class="showContent" id="Liam"></a>
+		<p id="LiamTxt" class="no-show">
+		Happy<br/>
+		English Language Learner<br/>
+		Gets distracted when he’s supposed to be working<br/>
+		Can read one book by himself<br/>
+		Loves to listen when someone reads aloud<br/>
+		Needs to work on learning the alphabet<br/>
+		Immersed in literacy at home
+		</p>
+		<p><a href= "PDF/Liam_Kindergarten.pdf" target="_blank" title="Liam_Kindergarten">Liam_Kindergarten</a></p>
+	</span>
+</div>
+
+<br/>
+<div class="demo">
+    <span>
+		<a><img src="Images/Nathan_4th.jpg" alt="Nathan_4th" style="width:100px;height:100px;" class="showContent" id="Nathan"></a>
+		<p id="NathanTxt" class="no-show">
+		Nathan
+		</p>
+		<p><a href= "PDF/Nathan_4th.pdf" target="_blank" title="Nathan_4th">Nathan_4th</a></p>
+	</span>
+    <span>
+		<a><img src="Images/Talon_2nd.jpg" alt="Talon_2nd" style="width:100px;height:100px;" class="showContent" id="Talon"></a>
+		<p id="TalonTxt" class="no-show">
+		Appears to be inattentive, even when she’s paying attention<br/>
+		Gets bored during classroom lessons<br/>
+		Works hard when she has teacher attention<br/>
+		Seems unsure of her responses and needs to check in with an adult to be sure her answers are correct<br/>
+		Wears glasses – but mostly forgets them<br/>
+		Seems indifferent to reading
+		</p>
+		<p><a href= "PDF/Talon_2nd.pdf" target="_blank" title="Talon_2nd">Talon_2nd</a></p>
+	</span>
+    <span>
+		<a><img src="Images/Will_4th.jpg" alt="Will_4th" style="width:100px;height:100px;" class="showContent" id="Will"></a>
+		<p id="WillTxt" class="no-show">
+		Gets distracted during classroom lessons<br/>
+		Likes to volunteer to answer questions in class<br/>
+		Wants directions repeated over and over<br/>
+		Does not engage in a whole class setting<br/>
+		Squints to read board at front of room<br/>
+		Views himself as a reader, even though he struggles to read<br/>
+		Lacks reading fluency<br/>
+		Does not like worksheets
+		</p>
+		<p><a href= "PDF/Will_4th.pdf" target="_blank" title="Will_4th">Will_4th</a></p>
+	</span>
+	<span>
+		<a><img src="Images/Zoe_4th.jpg" alt="Zoe_4th" style="width:100px;height:100px;" class="showContent" id="Zoe"></a>
+		<p id="ZoeTxt" class="no-show">
+		Eager to ask questions when she has the opportunity<br/>
+		Whispers words to herself as she reads<br/>
+		Has trouble remembering lesson directions<br/>
+		Seeks an audience as validation<br/>
+		Needs a lot of guidance when she reads<br/>
+		Doesn’t like to independently read<br/>
+		Reading on a 2nd grade level
+		</p>
+		<p><a href= "PDF/Zoe_4th.pdf" target="_blank" title="Zoe_4th">Zoe_4th</a></p>
 	</span>
 </div>
 
@@ -57,8 +277,9 @@ div.demo span {
 	var elem = idval+'Txt';
 	//alert(elem);
 		$('#'+elem).dialog({
-			title: 'Pokemon',
+			title: 'Quick Observations',
 			modal:true,
+			width:'auto',
 			open: function() {
             jQuery('.ui-widget-overlay').bind('click', function() {
                 jQuery('#'+elem).dialog('close');
