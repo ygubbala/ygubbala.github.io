@@ -1,0 +1,71 @@
+<html>
+<title>Interactive Web Page</title>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<style>
+body {background-color: powderblue;}
+h1{
+color: Red;
+}
+a{
+cursor:pointer;
+}
+div.demo {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+p{
+display:none;}
+div.demo span {
+    display: table-cell;
+    text-align: center;
+}
+
+</style>
+
+<div id = "container">
+<h1>Blue</h1>
+</div>
+
+<div class="demo">
+    <span>
+		<a><img src="pokeman.jpg" alt="Picasso" style="width:100px;height:100px;" class="showContent" id="Robbie"></a>
+		<p id="RobbieTxt">This is about Robbie</p>
+		<!--<a><embed src="Adam_4th.pdf" width="800px" height="2100px" />doc</a>
+		<iframe src="Adam_4th.docx" style="width: 100%;height: 100%;border: none;"></iframe>!-->
+		<a href= "Adam_4th.pdf" target="_blank" title="Adam_4th">Adam_4th</a>
+	</span>
+    <span>
+		<a><img src="pokeman.jpg" alt="Picasso" style="width:100px;height:100px;" class="showContent" id="Sam"></a>
+		<p id="SamTxt">This is about Sam</p>
+	</span>
+    <span>
+		<a><img src="pokeman.jpg" alt="Picasso" style="width:100px;height:100px;" class="showContent" id="Joey"></a>
+		<p id="JoeyTxt">This is about Joey</p>
+	</span>
+</div>
+
+</html>
+
+<script>
+
+	$('img.showContent').click(function() { 
+	var idval = $(this).attr('id');
+	var elem = idval+'Txt';
+	//alert(elem);
+		$('#'+elem).dialog({
+			title: 'Pokemon',
+			modal:true,
+			open: function() {
+            jQuery('.ui-widget-overlay').bind('click', function() {
+                jQuery('#'+elem).dialog('close');
+            })
+        }
+		});
+	});
+	
+
+</script>
