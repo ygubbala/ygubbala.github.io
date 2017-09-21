@@ -7,9 +7,10 @@
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <style>
-  body{
-  background-color: #80bfff;
-  }
+  
+	body{
+	background-color:#F0FFFF;
+	}
   #sortable1, #sortable2, #sortable3, #sortable4, #sortable5, #sortable6, #sortable7, #sortable8 {
     border: 2px solid #0000b3;
     min-height: 20px;
@@ -18,6 +19,8 @@
     padding: 5px 0 0 0;
     float: left;
     margin-right: 25px;
+	font-weight:bolder;
+	color:red;
   }
   #sortable1, #sortable2, #sortable3, #sortable4, #sortable7, #sortable8{
 	width: 100px;
@@ -47,12 +50,13 @@
 	margin: 0 5px 5px 5px;
     padding: 5px;
     font-size: 1.2em;
+	cursor: pointer;
 	}
 	
 	div.multicol{
 	column-width: 15em;
-  column-gap: 2em;              
-  padding: 44px;  
+	column-gap: 2em;              
+	padding: 44px;  
 	}
 	
   </style>
@@ -62,49 +66,43 @@
     $( "#sortable1, #sortable9" ).sortable({
       connectWith: ".connectedSortable"
     }).disableSelection();
-  } );
-    $( function() {
-    $( "#sortable2, #sortable9" ).sortable({
+	
+	$( "#sortable2, #sortable9" ).sortable({
       connectWith: ".connectedSortable"
     }).disableSelection();
-  } );
-    $( function() {
-    $( "#sortable3, #sortable9" ).sortable({
+	
+	 $( "#sortable3, #sortable9" ).sortable({
       connectWith: ".connectedSortable"
     }).disableSelection();
-  } );
-  $( function() {
-    $( "#sortable4, #sortable9" ).sortable({
+	
+	$( "#sortable4, #sortable9" ).sortable({
       connectWith: ".connectedSortable"
     }).disableSelection();
-  } );
-  $( function() {
-    $( "#sortable5, #sortable9" ).sortable({
+	
+	$( "#sortable5, #sortable9" ).sortable({
       connectWith: ".connectedSortable"
     }).disableSelection();
-  } );
-  $( function() {
-    $( "#sortable6, #sortable9" ).sortable({
+	
+	$( "#sortable6, #sortable9" ).sortable({
       connectWith: ".connectedSortable"
     }).disableSelection();
-  } );
-  $( function() {
-    $( "#sortable7, #sortable9" ).sortable({
+	
+	$( "#sortable7, #sortable9" ).sortable({
       connectWith: ".connectedSortable"
     }).disableSelection();
-  } );
-    $( function() {
-    $( "#sortable8, #sortable9" ).sortable({
+	
+	$( "#sortable8, #sortable9" ).sortable({
       connectWith: ".connectedSortable"
     }).disableSelection();
-  } );
-  
-  $( function() {
-    $( ".widget button" ).button().click( function( event ) {
+	
+	$( ".widget button" ).button().click( function( event ) {
       location.reload();
     } );
+	
+	
   } );
   
+
   </script>
 </head>
 <body>
@@ -115,28 +113,28 @@
 
 <div class = "headings">
 	<ul id="sortable1" class="connectedSortable">
-	  <li class="ui-state-highlight">RECYCLE</li>
+	  <li class="ui-state-disabled">RECYCLE</li>
 	</ul>
 	<ul id="sortable2" class="connectedSortable">
-	  <li class="ui-state-highlight">REUSE</li>
+	  <li class="ui-state-disabled">REUSE</li>
 	</ul>
 	<ul id="sortable3" class="connectedSortable">
-	  <li class="ui-state-highlight">COMPOST</li>
+	  <li class="ui-state-disabled">COMPOST</li>
 	</ul>
 	<ul id="sortable4" class="connectedSortable">
-	  <li class="ui-state-highlight">LANDFILL</li>
+	  <li class="ui-state-disabled">LANDFILL</li>
 	</ul>
 	<ul id="sortable5" class="connectedSortable">
-	  <li class="ui-state-highlight">BIODEGRADABLE</li>
+	  <li class="ui-state-disabled">BIODEGRADABLE</li>
 	</ul>
 	<ul id="sortable6" class="connectedSortable">
-	  <li class="ui-state-highlight">NON BIODEGRADABLE</li>
+	  <li class="ui-state-disabled">NON BIODEGRADABLE</li>
 	</ul>
 	<ul id="sortable7" class="connectedSortable">
-	  <li class="ui-state-highlight">TOXIC</li>
+	  <li class="ui-state-disabled">TOXIC</li>
 	</ul>
 	<ul id="sortable8" class="connectedSortable">
-	  <li class="ui-state-highlight">NON TOXIC</li>
+	  <li class="ui-state-disabled">NON TOXIC</li>
 	</ul>
 </div>
 <div class="multicol">
