@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Garbage game trash slips</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <style>
+  body{
+  background-color: #80bfff;
+  }
+  #sortable1, #sortable2, #sortable3, #sortable4, #sortable5, #sortable6, #sortable7, #sortable8 {
+    border: 2px solid #0000b3;
+    min-height: 20px;
+    list-style-type: none;
+    margin: 2px;
+    padding: 5px 0 0 0;
+    float: left;
+    margin-right: 25px;
+  }
+  #sortable1, #sortable2, #sortable3, #sortable4, #sortable7, #sortable8{
+	width: 130px;
+  }
+  #sortable5, #sortable6 {
+	width: 195px;
+  }
+  #sortable1 li, #sortable2 li, #sortable3 li, #sortable4 li,#sortable5 li, #sortable6 li, #sortable7 li, #sortable8 li {
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+    font-size: 1.2em;
+  }
+  div.headings {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+	div.middle{
+	text-align: center;
+	padding: 5px;
+	}
+	#sortable9 li{
+	width: 140px;
+	border: 2px solid #0000b3;
+    min-height: 20px;
+    list-style-type: none;
+	margin: 0 5px 5px 5px;
+    padding: 5px;
+    font-size: 1.2em;
+	}
+	
+	div.multicol{
+	column-width: 15em;
+  column-gap: 2em;              
+  padding: 44px;  
+	}
+	
+  </style>
+ 
+  <script>
+  $( function() {
+    $( "#sortable1, #sortable9" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  } );
+    $( function() {
+    $( "#sortable2, #sortable9" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  } );
+    $( function() {
+    $( "#sortable3, #sortable9" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  } );
+  $( function() {
+    $( "#sortable4, #sortable9" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  } );
+  $( function() {
+    $( "#sortable5, #sortable9" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  } );
+  $( function() {
+    $( "#sortable6, #sortable9" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  } );
+  $( function() {
+    $( "#sortable7, #sortable9" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  } );
+    $( function() {
+    $( "#sortable8, #sortable9" ).sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  } );
+  
+  $( function() {
+    $( ".widget button" ).button().click( function( event ) {
+      location.reload();
+    } );
+  } );
+  
+  </script>
+</head>
+<body>
+
+<div class="widget middle">
+  <button id="refresh">Refresh </button>
+</div>
+
+<div class = "headings">
+	<ul id="sortable1" class="connectedSortable">
+	  <li class="ui-state-highlight">RECYCLE</li>
+	</ul>
+	<ul id="sortable2" class="connectedSortable">
+	  <li class="ui-state-highlight">REUSE</li>
+	</ul>
+	<ul id="sortable3" class="connectedSortable">
+	  <li class="ui-state-highlight">COMPOST</li>
+	</ul>
+	<ul id="sortable4" class="connectedSortable">
+	  <li class="ui-state-highlight">LANDFILL</li>
+	</ul>
+	<ul id="sortable5" class="connectedSortable">
+	  <li class="ui-state-highlight">BIODEGRADABLE</li>
+	</ul>
+	<ul id="sortable6" class="connectedSortable">
+	  <li class="ui-state-highlight">NON BIODEGRADABLE</li>
+	</ul>
+	<ul id="sortable7" class="connectedSortable">
+	  <li class="ui-state-highlight">TOXIC</li>
+	</ul>
+	<ul id="sortable8" class="connectedSortable">
+	  <li class="ui-state-highlight">NON TOXIC</li>
+	</ul>
+</div>
+<div class="multicol">
+<ul id="sortable9" class="connectedSortable">
+  <li class="ui-state-default">Cereal box</li>
+  <li class="ui-state-default">Used cotton swabs with plastic sticks</li>
+  <li class="ui-state-default">Soiled disposable diaper</li>
+  <li class="ui-state-default">Juice box</li>
+  <li class="ui-state-default">Styrofoam fast-food box</li>
+  <li class="ui-state-default">Newspapers</li>
+  <li class="ui-state-default">Transistor battery</li>
+  <li class="ui-state-default">Spray can of furniture polish</li>
+  <li class="ui-state-default">Walnut shells</li>
+  <li class="ui-state-default">Grass cuttings from lawn mowing</li>
+  <li class="ui-state-default">Broken washing machine</li>
+  <li class="ui-state-default">Brown glass medicine bottle</li>
+  <li class="ui-state-default">Plastic soda bottle</li>
+  <li class="ui-state-default">Spoiled hamburger meat</li>
+  <li class="ui-state-default">Chicken bones</li>
+  <li class="ui-state-default">Cardboard frozen juice can</li>
+  <li class="ui-state-default">Paper and droppings from hamster cage</li>
+  <li class="ui-state-default">Broken plastic fork</li>
+  <li class="ui-state-default">Soiled kitty litter</li>
+  <li class="ui-state-default">Peach Pits</li>
+  <li class="ui-state-default">Brown paper grocery bag</li>
+  <li class="ui-state-default">Paper, typed on one side only</li>
+  <li class="ui-state-default">Steel wool pad</li>
+  <li class="ui-state-default">Paper sack from fast-food restaurant</li>
+  <li class="ui-state-default">favorite old jeans, too small, worn at the knees</li>
+  <li class="ui-state-default">White plastic milk jug</li>
+  <li class="ui-state-default">Aluminum soda can</li>
+  <li class="ui-state-default">Small amount of wet oil paint in can</li>
+  <li class="ui-state-default">Half-used cedar oil polish</li>
+  <li class="ui-state-default">Drain-opener can</li>
+  <li class="ui-state-default">Nearly empty pesticide can</li>
+  <li class="ui-state-default">Small amount dry oil paint in can</li>
+  <li class="ui-state-default">Glass baby food jar</li>
+  <li class="ui-state-default">Steel vegetable can</li>
+  <li class="ui-state-default">Bleach bottle</li>
+  <li class="ui-state-default">2-inch pencil stub</li>
+  <li class="ui-state-default">Waxed milk carton</li>
+  <li class="ui-state-default">plastic grocery bag</li>
+  <li class="ui-state-default">Plastic petroleum jelly jar</li>
+  <li class="ui-state-default">Old, broken bicycle</li>
+  <li class="ui-state-default">Corrugated cardboard box</li>
+  <li class="ui-state-default">Plastic shampoo bottle</li>
+  <li class="ui-state-default">Cracked plastic liquid soap dispenser</li>
+  <li class="ui-state-default">Plastic window cleaner bottle</li>
+  <li class="ui-state-default">Rubber band</li>
+  <li class="ui-state-default">English homework assignment written on both sides of paper</li>
+  <li class="ui-state-default">Egg shells</li>
+  <li class="ui-state-default">Green glass wine bottle</li>
+  <li class="ui-state-default">Plastic bread bag</li>
+  <li class="ui-state-default">Cracked ceramic coffee mug</li>
+  <li class="ui-state-default">Styrofoam packaging</li>
+  <li class="ui-state-default">Coffee grounds</li>
+  <li class="ui-state-default">Potato peelings</li>
+  <li class="ui-state-default">Spilled baking soda</li>
+</ul>
+</div> 
+
+</body>
+</html>
