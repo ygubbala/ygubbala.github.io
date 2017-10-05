@@ -43,7 +43,7 @@ $(document).ready(function() {
 		var x = $("#gRTwo").val();
 		if(x >= 2.51 && x <= 3.50)
 		{
-			x = (x * 2.71).toFixed(2);
+			x = (x * (9.49/3.5)).toFixed(2);
 			$('#gRTwoValue').val(x);
 			x = 0;
 		}else{
@@ -55,7 +55,7 @@ $(document).ready(function() {
 		var x = $("#gRThree").val();
 		if(x >= 1.51 && x <= 2.50)
 		{
-			x = (x * 3.39).toFixed(2);
+			x = (x * (8.49/2.50)).toFixed(2);
 			$('#gRThreeValue').val(x);
 			x = 0;
 		}else{
@@ -67,7 +67,7 @@ $(document).ready(function() {
 		var x = $("#gRFour").val();
 		if(x >= 1 && x <= 1.5)
 		{
-			x = (x * 4.6).toFixed(2);
+			x = (x * (6.99/1.5)).toFixed(2);
 			$('#gRFourValue').val(x);
 			x = 0;
 		}else{
@@ -78,6 +78,7 @@ $(document).ready(function() {
 });
 
 </script>
+
 
 <div class="container">
   <h2>The form below converts the grades</h2>
